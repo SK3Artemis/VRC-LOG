@@ -211,19 +211,8 @@ pub fn parse_avatar_ids(path: &PathBuf) -> Vec<String> {
 pub fn print_colorized(avatar_id: &str) {
     lazy_static! {
         static ref INDEX: RwLock<usize> = RwLock::new(0);
-        static ref COLORS: [Color; 12] = [
-            Color::Red,
-            Color::BrightRed,
-            Color::Yellow,
-            Color::BrightYellow,
-            Color::Green,
-            Color::BrightGreen,
-            Color::Blue,
-            Color::BrightBlue,
-            Color::Cyan,
-            Color::BrightCyan,
+        static ref COLORS: [Color; 1] = [
             Color::Magenta,
-            Color::BrightMagenta,
         ];
     }
 
