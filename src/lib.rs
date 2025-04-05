@@ -202,20 +202,9 @@ pub fn parse_avatar_ids(path: &PathBuf) -> Vec<String> {
 /// # Print with colorized rainbow rows for separation
 pub fn print_colorized(avatar_id: &str) {
     static INDEX: LazyLock<RwLock<usize>> = LazyLock::new(|| RwLock::new(0));
-    static COLORS: LazyLock<[Color; 12]> = LazyLock::new(|| {
+    static COLORS: LazyLock<[Color; 1]> = LazyLock::new(|| {
         [
-            Color::Red,
-            Color::BrightRed,
-            Color::Yellow,
-            Color::BrightYellow,
-            Color::Green,
-            Color::BrightGreen,
-            Color::Blue,
-            Color::BrightBlue,
-            Color::Cyan,
-            Color::BrightCyan,
             Color::Magenta,
-            Color::BrightMagenta,
         ]
     });
 
